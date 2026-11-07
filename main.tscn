@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://c44dbg21qpevg"]
+
+[ext_resource type="Texture2D" uid="uid://t0h6dis0hqwo" path="res://bg.png" id="1_epypp"]
+[ext_resource type="Texture2D" uid="uid://kvjonr0jnfjm" path="res://player.png" id="2_epypp"]
+[ext_resource type="Script" uid="uid://dkdkgos13bxe3" path="res://koding.gd" id="3_epypp"]
+[ext_resource type="Script" uid="uid://b43sssubs3bro" path="res://spawner.gd" id="4_1bvp3"]
+[ext_resource type="PackedScene" uid="uid://ccm5yafupjlk1" path="res://fruit.tscn" id="5_lquwl"]
+
+[node name="Contohmain" type="Node2D" unique_id=1831315634]
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1035358561]
+offset_left = 2.0
+offset_top = 4.0
+offset_right = 1674.0
+offset_bottom = 945.0
+scale = Vector2(0.68871, 0.6903554)
+texture = ExtResource("1_epypp")
+
+[node name="Timer" type="Timer" parent="." unique_id=25472440]
+wait_time = 1.5
+autostart = true
+script = ExtResource("4_1bvp3")
+fruit_scene = ExtResource("5_lquwl")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=424181519]
+texture_filter = 2
+position = Vector2(153, 514)
+scale = Vector2(0.24180104, 0.24180104)
+texture = ExtResource("2_epypp")
+script = ExtResource("3_epypp")

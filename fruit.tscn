@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://ccm5yafupjlk1"]
+
+[ext_resource type="Texture2D" uid="uid://b701ax2qxljhu" path="res://Pixel Art Green Battery Icon.png" id="1_dajs1"]
+[ext_resource type="Script" uid="uid://plnjot1i1xhe" path="res://fruit.gd" id="1_t45jj"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_c6lqs"]
+size = Vector2(245.50293, 388.8881)
+
+[node name="Fruit" type="Area2D" unique_id=1051602165]
+collision_layer = 0
+script = ExtResource("1_t45jj")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1867289919]
+position = Vector2(1, 0)
+scale = Vector2(0.15791193, 0.15791193)
+texture = ExtResource("1_dajs1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1619637720]
+rotation = 3.1415927
+scale = Vector2(0.2709866, 0.2709866)
+shape = SubResource("RectangleShape2D_c6lqs")
